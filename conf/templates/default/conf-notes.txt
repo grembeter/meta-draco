@@ -1,0 +1,11 @@
+Build the SDK:
+  ; bitbake core-image-draco -c populate_sdk
+
+Build the toolchain:
+  ; bitbake meta-toolchain -c populate_sdk
+
+Build the kernel:
+  ; bitbake virtual/kernel -c deploy
+
+Build the eMMC/SDCard image:
+  ; bitbake core-image-butterfly
